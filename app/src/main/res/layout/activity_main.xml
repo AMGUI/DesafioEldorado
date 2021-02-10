@@ -12,6 +12,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaPostagem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
@@ -33,7 +34,7 @@
             android:padding="6dp">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextPostagem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="6dp"
