@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -47,6 +48,12 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     // For loading and tinting drawables on older versions of the platform
     implementation "androidx.appcompat:appcompat-resources:$appcompat_version"
+
+    //Room
+    def room_version = "2.2.6"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
